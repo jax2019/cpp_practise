@@ -8,7 +8,7 @@
 
 using namespace std;
 
-int main(){
+int main() {
     MyDate date = MyDate();
     date.printDate();
 
@@ -16,7 +16,22 @@ int main(){
     Student student = Student();
     student.print();
 
+    Student ss;
 
+    const string &basicString = ss.getName();
+    cout << basicString << endl;
+
+    Student *sp = &student;
+    const string &name = sp->getName();
+    cout << "name = " << name << endl;
+    sp->setName("zyh");
+    const string &name1 = sp->getName();
+    cout << "name = " << name1 << endl;
+
+}
+
+void Student::appendName(string appendString) {
+    setName(getName().append(appendString));
 }
 
 MyDate::MyDate() {

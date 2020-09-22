@@ -14,6 +14,7 @@ class Student {
 private:
     MyDate birthday;
     string name;
+    void appendName(string);
 
 public:
     MyDate getBirthday();

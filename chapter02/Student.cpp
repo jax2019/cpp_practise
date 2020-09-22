@@ -27,6 +27,8 @@ void Student::setName(const string name) {
     Student::name = name;
 }
 
+
+
 void Student::print() {
     cout << "birthday - > " << endl;
     getBirthday().printDate();
