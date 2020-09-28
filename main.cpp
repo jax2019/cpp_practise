@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string>
+#include "chapter03/CppBean.h"
 
 using std::string;
 using std::endl;
@@ -17,6 +18,8 @@ int main() {
 //    cout << "a = " << a << "\t\tb = " << b << "\t\tname = " << name << endl;
 //
     cout << "---------------------------------------------------------------------------";
+
+
 
     return 100;
 }
