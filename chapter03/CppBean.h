@@ -18,6 +18,7 @@ private:
     int var1;
     int var2;
 
+
 public:
 
     int getVar1() const;

@@ -7,20 +7,27 @@
 
 #include <string>
 
+using namespace std;
 
 class School {
 
 private:
     int classCount;
-    int which;
+    string which;
 public:
-    int getClassCount() const;
+    int getClassCount();
 
     void setClassCount(int classCount);
 
-    int getWhich() const;
+    string getWhich();
 
-    void setWhich(int which);
+    void setWhich(string which);
+
+    School();
+
+    School(int classCount, string which);
+
+    School(School &school);
 };
 
 

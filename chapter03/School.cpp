@@ -4,18 +4,31 @@
 
 #include "School.h"
 
-int School::getClassCount() const {
+int School::getClassCount() {
     return classCount;
 }
 
 void School::setClassCount(int classCount) {
-    School::classCount = classCount;
+    this->classCount = classCount;
 }
 
-int School::getWhich() const {
+string School::getWhich() {
     return which;
 }
 
-void School::setWhich(int which) {
-    School::which = which;
+void School::setWhich(string which) {
+    this->which = which;
 }
+
+School::School() : which("石首市南岳高中"), classCount(100) {}
+
+School::School(int classCount, string which) {
+    this->which = which;
+    this->classCount = classCount;
+}
+School::School(School &school) {
+    this->setWhich("复制: " + school.getWhich());
+}
+
+
+

@@ -7,6 +7,7 @@
 #include <iostream>
 #include "CppBean.h"
 #include "School.h"
+#include "JD.h"
 
 //全局变量如果不指定值  会默认赋值为0
 int A;
@@ -32,14 +33,34 @@ int main() {
 
     //使用new创建对象,不加括号,成员变量会被赋随机值
     CppBean *cppBean3 = new CppBean();
-    cout <<"var2 = "<< cppBean3->getVar2() << endl;
-    cout <<"var1 = "<< cppBean3->getVar1() << endl;
+    cout << "var2 = " << cppBean3->getVar2() << endl;
+    cout << "var1 = " << cppBean3->getVar1() << endl;
 
     cout << "-----------------" << endl;
 
     School *pSchool1 = new School;
     School *pSchool2 = new School();
-    cout <<"classCount = "<< pSchool1->getClassCount()<< endl;
-    cout <<"classCount = "<< pSchool2->getClassCount()<< endl;
+    cout << "classCount = " << pSchool1->getClassCount() << endl;
+    cout << "classCount = " << pSchool2->getClassCount() << endl;
+
+    cout << "----------------- array" << endl;
+
+    School schoolArray[3];
+    cout << schoolArray[1].getWhich() << endl;
+
+    cout << "----------------- copy" << endl;
+    School schoolA(10, "北京大学");
+    const School schoolB;
+    School schoolC = schoolA;
+
+    cout << schoolC.getWhich() << endl;
+
+    cout << "----------------- constructor" << endl;
+
+    JD jd(100);
+
+    jd = 7;
+    cout << "rank = " << jd.getRank() << endl;
+
     return 100;
 }
