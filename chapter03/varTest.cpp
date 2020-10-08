@@ -6,6 +6,7 @@
 #include <string>
 #include <iostream>
 #include "CppBean.h"
+#include "School.h"
 
 //全局变量如果不指定值  会默认赋值为0
 int A;
@@ -16,7 +17,6 @@ int main() {
 
     //局部变量如果不赋值，会得到一个随机值
     int b;
-    int c;
     cout << "b的值是" << b << endl;
 
     CppBean *cppBean = new CppBean(2, 5);
@@ -28,5 +28,18 @@ int main() {
     CppBean cppBean2(2, 5);
     cout << cppBean2.getVar2() << endl;
 
+    cout << "-----------------" << endl;
+
+    //使用new创建对象,不加括号,成员变量会被赋随机值
+    CppBean *cppBean3 = new CppBean();
+    cout <<"var2 = "<< cppBean3->getVar2() << endl;
+    cout <<"var1 = "<< cppBean3->getVar1() << endl;
+
+    cout << "-----------------" << endl;
+
+    School *pSchool1 = new School;
+    School *pSchool2 = new School();
+    cout <<"classCount = "<< pSchool1->getClassCount()<< endl;
+    cout <<"classCount = "<< pSchool2->getClassCount()<< endl;
     return 100;
 }

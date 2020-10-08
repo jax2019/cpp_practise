@@ -25,7 +25,8 @@ void CppBean::setVar2(int var2) {
     CppBean::var2 = var2;
 }
 
-CppBean::CppBean() {}
+CppBean::CppBean() {
+}
 
 CppBean::CppBean(int var1, int var2) : var1(var1), var2(var2) {
     CppBean::var2 = 200;
