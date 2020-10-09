@@ -9,9 +9,13 @@
 #include "School.h"
 #include "JD.h"
 
+static int gVar = 100;
+
 //全局变量如果不指定值  会默认赋值为0
 int A;
 using namespace std;
+
+void fun1();
 
 int main() {
     cout << "A的值是" << A << endl;
@@ -61,5 +65,15 @@ int main() {
     jd = 7;
     cout << "rank = " << jd.getRank() << endl;
 
+    cout << "----------------- global variable" << endl;
+
+    for (int i = 0; i < 3; ++i) {
+        fun1();
+        cout << "全局变量" << gVar << endl;
+    }
     return 100;
+}
+
+void fun1() {
+    gVar++;
 }
