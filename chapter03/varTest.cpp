@@ -54,7 +54,6 @@ int main() {
     School schoolC = schoolA;
 
     cout << schoolC.getWhich() << endl;
-
     cout << "----------------- constructor" << endl;
 
     JD jd(100);
