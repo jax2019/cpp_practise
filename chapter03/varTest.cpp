@@ -64,6 +64,7 @@ int main() {
 
     jd = 7;
     cout << "rank = " << jd.getRank() << endl;
+    cout << "jd.a = " << jd.getA() << "\t\t" << "id.b = " << jd.getB() << endl;
 
     cout << "----------------- global variable" << endl;
 

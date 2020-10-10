@@ -3,6 +3,7 @@
 //
 
 #include "School.h"
+#include <iostream>
 
 int School::getClassCount() {
     return classCount;
@@ -26,8 +27,13 @@ School::School(int classCount, string which) {
     this->which = which;
     this->classCount = classCount;
 }
+
 School::School(School &school) {
     this->setWhich("复制: " + school.getWhich());
+}
+
+void School::setup(string which) const {
+    std::cout << "使用常量函数修改" << endl;
 }
 
 

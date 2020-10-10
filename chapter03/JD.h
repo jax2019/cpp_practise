@@ -9,14 +9,21 @@
 class JD {
 private:
     int rank;
+    int a;
+    int b;
 public:
 
     JD();
     JD(int rank);
 
+
     void setRank(int rank);
 
     int getRank();
+
+    int getA();
+
+    int getB();
 
 };
 

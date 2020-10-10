@@ -28,6 +28,8 @@ public:
     School(int classCount, string which);
 
     School(School &school);
+
+    void setup(string which) const;
 };
 
 
