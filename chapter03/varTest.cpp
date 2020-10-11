@@ -9,6 +9,8 @@
 #include "School.h"
 #include "JD.h"
 
+#include "FriendMethod.h"
+
 static int gVar = 100;
 
 //全局变量如果不指定值  会默认赋值为0
@@ -72,6 +74,10 @@ int main() {
         fun1();
         cout << "全局变量" << gVar << endl;
     }
+
+    cout << "----------------- 友元"<< endl;
+    School school;
+    school.testFriend();
     return 100;
 }
 

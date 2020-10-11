@@ -30,6 +30,8 @@ public:
     School(School &school);
 
     void setup(string which) const;
+
+    void testFriend();
 };
 
 

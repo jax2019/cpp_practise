@@ -4,6 +4,9 @@
 
 #include "School.h"
 #include <iostream>
+#include "FriendMethod.h"
+
+using namespace std;
 
 int School::getClassCount() {
     return classCount;
@@ -34,6 +37,11 @@ School::School(School &school) {
 
 void School::setup(string which) const {
     std::cout << "使用常量函数修改" << endl;
+}
+
+void School::testFriend() {
+    FriendMethod friendMethod(10, 100);
+    cout << "friendMethod test value = " << friendMethod.getValue() << endl;
 }
 
 
