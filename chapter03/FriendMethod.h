@@ -17,6 +17,7 @@ private:
 
 public:
     FriendMethod(int a, int b);
+
     FriendMethod();
 
 public:

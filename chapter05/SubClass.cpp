@@ -4,8 +4,8 @@
 #include "BaseClass.cpp"
 
 class SubClass : public BaseClass {
-
+    int a;
     void fun(){
-        int c = a + b;
+        int c = BaseClass::a + b;
     }
 };
