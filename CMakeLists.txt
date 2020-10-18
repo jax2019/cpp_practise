@@ -3,8 +3,8 @@ project(untitled)
 
 set(CMAKE_CXX_STANDARD 98)
 
-add_executable(io main.cpp )
-add_executable(cast  CastTest.h CastTest.cpp)
+add_executable(io main.cpp)
+add_executable(cast CastTest.h CastTest.cpp)
 add_executable(array chapter01/ArrayTest.cpp chapter04/Main.cpp chapter04/Math.cpp chapter04/Math.h)
 add_executable(override chapter01/OverrideTest.cpp)
 add_executable(test1 chapter01/CodeAnswer1.cpp)
@@ -13,3 +13,4 @@ add_executable(chapter03_constructor chapter03/varTest.cpp chapter03/CppBean.cpp
 add_executable(chapter04_operator chapter04/Main.cpp chapter04/Math.h chapter04/Math.cpp chapter04/A.cpp chapter04/B.cpp)
 add_executable(chapter05_extends chapter05/Main.cpp chapter05/BaseClass.cpp chapter05/SubClass.cpp)
 add_executable(chapter06_virtual_method chapter06/Main.cpp chapter06/A.cpp chapter06/A.h chapter06/B.cpp chapter06/B.h)
+add_executable(chapter07_io chapter07/Main.cpp)
